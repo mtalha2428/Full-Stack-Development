@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1> Student Feedback Survey </h1>
+    <img src="https://media.istockphoto.com/id/911463894/vector/online-survey-concept-vector-illustration-of-people-fulfilling-checklist.jpg?s=612x612&w=0&k=20&c=GRtUvKNsacviAfUuYsgmsEhI_Zj67kvdJn4lw2x92Dw="  alt="Survey Image" height="300px" width="500px"/>
+    <p> Thank you for taking the time to complete this survey. Your feedback helps us to improve the learning experience for future Students.<br/>
+    Learn More about Web Development at our website <a href="https://www.wscubetech.com/jaipur/mern-stack-course">Learn Website Development</a> </p>
+    <hr/>
+    <label for="name" style="font-size: 20px; font-weight: bold;"> Name: </label><br/>
+    <input type="text" id="name" placeholder="Enter your name" required/><br/><br/>
+    <label for="email" style="font-size: 20px; font-weight: bold;"> Email: </label><br/>
+    <input type="email" id="email" placeholder="Enter your email" required /> <br/> <br/> 
+
+    <label for="age" style="font-size: 20px; font-weight: bold;"> Age: </label><br/>
+    <input type="number" id="age" placeholder="Enter your age" required /> <br/> <br/> 
+
+    <label for="education" style="font-size: 20px; font-weight: bold;"> Education Level: </label><br/>
+    <select id="education" required>
+        <option value="">Select your education level</option>
+        <option value="highschool">High School</option>
+        <option value="bachelor">Bachelor's Degree</option>
+        <option value="master">Master's Degree</option>
+        <option value="phd">PhD</option>
+        <option value="other">Other</option>
+    </select>
+    <br/><br/>
+
+    <fieldset>
+        <legend style="font-size: 20px; font-weight: bold;"> Which topics are you most interested in? (Select all that apply) </legend>
+        <input type="checkbox" id="html" name="topics" value="html">
+        <label for="html"> HTML </label><br/>
+        <input type="checkbox" id="css" name="topics" value="css">
+        <label for="css"> CSS </label><br/>
+        <input type="checkbox" id="javascript" name="topics" value="javascript">
+        <label for="javascript"> JavaScript </label><br/>
+        <input type="checkbox" id="react" name="topics" value="react">
+        <label for="react"> React </label><br/>
+        <input type="checkbox" id="nodejs" name="topics" value="nodejs">
+        <label for="nodejs"> Node.js </label><br/>
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend style="font-size: 20px; font-weight: bold;"> How would you rate the course? </legend>
+        <input type="radio" id="excellent" name="rating" value="excellent">
+        <label for="excellent"> Excellent </label><br/>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good"> Good </label><br/>
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average"> Average </label><br/>
+    </fieldset>
+
+    <br/><br/>
+    <label for="comments" style="font-size: 20px; font-weight: bold;"> Additional Comments: </label><br/>
+    <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br/><br/>
+    <button type="submit" style="font-size: 18px; padding: 10px 20px;"> Submit </button>
+
+    <footer style="margin-top: 20px; font-size: 14px; color: gray;">
+        &copy; 2024 Student Feedback Survey. All rights reserved.
+    </footer>
+</body>
+</html>
